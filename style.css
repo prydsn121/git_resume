@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
     text-decoration:none;
 }
 .nav-menu li a {
-    transition: 0.5s,border-bottom 4s;
+    transition:  color 0.5s,border-bottom 4s;
 
 }
 .nav-menu li a:hover{
@@ -156,13 +156,14 @@ section:nth-child(2n){
     position:relative
 }
 #about-para{
-    height:100px;
+    /* height:100px; */
     width:70%;
     text-align:justify;
     color:gray;
     line-height:28px;
     font-size:1.1rem;
     margin:auto;
+    padding: 10px;
    
 
 }
@@ -210,7 +211,7 @@ section:nth-child(2n){
 .timeline-box{
     padding:5px;
     width:40%;
-    min-height:150px;
+    min-height:220px;
     position:relative;
    left:5%;
    text-align:right;
@@ -333,6 +334,11 @@ section:nth-child(2n){
     #contact-form-container{
         width:50%;
     }
+    #my-details-container {
+        width: 35%;
+        margin-left: 6%;
+    }
+    
     #my-details-container p{
       color:#d9dcdd;
       font-size:0.9rem;
@@ -398,6 +404,15 @@ textarea{
     textarea:focus,
     button:focus{
         outline:none;
+    }
+    .text-right{
+        text-align:right;
+    }
+    .text-center{
+        text-align:center;
+    }
+    .text-justify{
+        text-align:justify;
     }
     h4 {
         display: block;
@@ -481,18 +496,26 @@ font-weight:600;
 }
 .eighty-two-percent{
     height:inherit;
-    width:82%;
+    width:82%;+
+
 }
 @media only screen and (max-width:572px){
     .timeline-box{
         width:100%;
         left:10% !important;
     }
+    html{
+        font-size:15px !important;
+    }
     .bars{
         display:block;
     }
     .nav-menu{
         display:none;
+    }
+    .timeline-box right .h5
+    {
+        font-size: 15px !important;
     }
 
 }
@@ -504,11 +527,30 @@ font-weight:600;
     .timeline-box::after{
         left:-9.3% !important;
     }
-    #timeline-divider{
+    .timeline-divider{
         top:10%;
-        left:2%;
+        left:5%;
 
     }
+    .timeline-box right .h5
+    {
+        font-size: 15px !important;
+    }
+    html{
+        font-size:15px !important;
+    }
+    .timeline-box:nth-child(2n){
+        left:12% !important;
+        /* /* text-align: justify; */
+    
+    }
+        .timeline-box:nth-child(2n+1)::after{
+            left:-11.8% !important;
+             text-align: left; 
+             font-size: 12px !;
+          
+          }
+         
     #contact-form{
         margin-left:0%;
     }
